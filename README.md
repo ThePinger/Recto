@@ -1,2 +1,2 @@
 # Recto
-Rails application for taking notes.
+Simple Rails application for taking notes.
