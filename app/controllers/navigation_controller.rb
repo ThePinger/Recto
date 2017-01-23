@@ -5,10 +5,7 @@ class NavigationController < ApplicationController
   def login
   end
 
-  def about
-  end
-
   def signup
   end
-  
+
 end
