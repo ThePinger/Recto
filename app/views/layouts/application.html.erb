@@ -10,7 +10,7 @@
   </head>
 
   <body>
-
+    
 
     <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -44,7 +44,7 @@
           </ul>
       <%end%>
 
-      <% if params[:action] == 'signup' || params[:action] == 'new'%>
+      <% if params[:controller] == 'user' && params[:action] == 'new'%>
         <li><a href="/home">Home <span class="sr-only">(current)</span></a></li>
         <li class="active"><a href="/signup">SignUp</a></li>
 
@@ -62,7 +62,7 @@
         </ul>
     <%end%>
 
-    <% if params[:action] == 'login'%>
+    <% if params[:controller] == 'sessions' && params[:action] == 'new'%>
       <li><a href="/home">Home <span class="sr-only">(current)</span></a></li>
       <li><a href="/signup">SignUp</a></li>
 
