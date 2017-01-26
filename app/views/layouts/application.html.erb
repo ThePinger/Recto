@@ -11,7 +11,7 @@
 
   <body>
 
-    <%= yield %>
+
     <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -44,7 +44,7 @@
           </ul>
       <%end%>
 
-      <% if params[:action] == 'signup'%>
+      <% if params[:action] == 'signup' || params[:action] == 'new'%>
         <li><a href="/home">Home <span class="sr-only">(current)</span></a></li>
         <li class="active"><a href="/signup">SignUp</a></li>
 
@@ -82,6 +82,7 @@
     </div>
   </div>
 </nav>
+  <%= yield %>
   </body>
   <style>
 
